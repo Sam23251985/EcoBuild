@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobuild</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/placeholder.svg?height=60&width=200" alt="Logo UV" class="logo">
+            <h1>Ecobuild</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showConcept('planta')">Planta</a></li>
+            <li><a href="#" onclick="showConcept('alzado')">Alzado</a></li>
+            <li><a href="#" onclick="showConcept('corte')">Corte</a></li>
+        </ul>
+    </nav>
+    <div class="content" id="content">
+        <!-- Content will be dynamically loaded here -->
+    </div>
+    <div id="popup">
+        <h2 id="popupTitle"></h2>
+        <p id="popupContent"></p>
+        <button onclick="closePopup()">Cerrar</button>
+    </div>
+    <div id="overlay" onclick="closePopup()"></div>
+    <footer>
+        <div class="footer-content">
+            <img src="/placeholder.svg?height=60&width=200" alt="Logo UV" class="logo">
+            <p>© 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
