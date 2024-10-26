@@ -3,38 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecobuild</title>
+    <title>EcoBuild - Construcción Sostenible</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="/placeholder.svg?height=60&width=200" alt="Logo UV" class="logo">
-            <h1>Ecobuild</h1>
+    <div class="top-bar">
+        <div class="container">
+            <div class="contacto-info">
+                <span>📧 contacto@ecobuild.com</span>
+                <span>📍 Calle Verde 123, Ciudad Sostenible</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">EcoBuild</div>
+            <div class="nav-links">
+                <a href="#">ACERCA DE NOSOTROS</a>
+                <a href="#">MISION Y VISION</a>
+                <a href="#">GALERIA</a>
+                <a href="#">CONTÁCTANOS</a>
+            </div>
+            <div class="phone-info">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <span>CONTACTO</span>
+                    <span>+34 123 456 789</span>
+                </div>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="welcome-text">BIENVENIDO A ECOBUILD</span>
+                <h1>Planos Sostenibles</h1>
+                <p>Descubre la innovación en arquitectura ecológica con nuestros diseños sostenibles.</p>
+                <button class="cta-button">CONTÁCTANOS HOY</button>
+            </div>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#" onclick="showConcept('planta')">Planta</a></li>
-            <li><a href="#" onclick="showConcept('alzado')">Alzado</a></li>
-            <li><a href="#" onclick="showConcept('corte')">Corte</a></li>
-        </ul>
-    </nav>
-    <div class="content" id="content">
-        <!-- Content will be dynamically loaded here -->
-    </div>
-    <div id="popup">
-        <h2 id="popupTitle"></h2>
-        <p id="popupContent"></p>
-        <button onclick="closePopup()">Cerrar</button>
-    </div>
-    <div id="overlay" onclick="closePopup()"></div>
-    <footer>
-        <div class="footer-content">
-            <img src="/placeholder.svg?height=60&width=200" alt="Logo UV" class="logo">
-            <p>©Ecobuild 2024. Todos los derechos reservados.</p>
+
+   <!-- Section: Compromiso con el Futuro -->
+   <section class="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="imagenes/acerca.jpg" alt="Edificio sostenible">
+                <div class="projects-completed">
+                    <span class="number">100%</span>
+                    <span class="text">Comprometidos con la Sostenibilidad</span>
+                </div>
+            </div>
+            <div class="about-text">
+                <span class="section-subtitle">ACERCA DE ECOBUILD</span>
+                <h2>Compromiso con el Futuro</h2>
+                <p class="main-description">En EcoBuild, nos dedicamos a promover un entorno más sostenible a través de diseños arquitectónicos que respetan y potencializan todos los recursos naturales. Únase a nosotros para construir un mundo mejor.</p>
+                
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">🌱</div>
+                        <div class="feature-content">
+                            <h3>Nuestra Visión</h3>
+                            <p>Visualizamos un futuro donde cada estructura diseñe con el medioambiente en mente, alcanzando la perfecta armonía entre innovación y sostenibilidad.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🌍</div>
+                        <div class="feature-content">
+                            <h3>Nuestro Compromiso</h3>
+                            <p>Estamos comprometidos con la creación de diseños arquitectónicos que no solo inspiren a las generaciones actuales, sino que también preserven recursos y minimicen el impacto ambiental.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="contact-btn">CONTÁCTANOS</button>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="services-header">
+            <span class="section-subtitle">NUESTROS SERVICIOS</span>
+            <h2>Soluciones Sostenibles</h2>
+            <p class="services-description">
+                Ofrecemos servicios que garantizan un impacto positivo en el medioambiente, manteniendo estándares estéticos y funcionales. Desde consultorías hasta proyectos a gran escala, estamos aquí para transformar en realidades tus visiones sostenibles.
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🌳</div>
+                <h3>Consultoría Verde</h3>
+                <p>Ofrecemos asesoramiento experto para incorporar prácticas sostenibles en tus proyectos desde las primeras etapas de planificación.</p>
+            </div>
+
+            <div class="service-card highlight">
+                <div class="service-icon">📐</div>
+                <h3>Diseños Innovadores</h3>
+                <p>Creamos planos arquitectónicos que integran tecnología de punta con métodos de construcción sustentables.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <h3>Energía Renovable</h3>
+                <p>Incorporamos soluciones de energía renovable en nuestros diseños para reducir el consumo energético y aumentar la eficiencia.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💧</div>
+                <h3>Gestión de Recursos</h3>
+                <p>Desarrollamos estrategias efectivas para gestionar el agua y otros recursos de manera eficiente.</p>
+            </div>
+
+            <div class="service-card highlight">
+                <div class="service-icon">♻️</div>
+                <h3>Materiales Reciclados</h3>
+                <p>Utilizamos materiales reciclados de alta calidad en nuestros proyectos para reducir el impacto medioambiental.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🌿</div>
+                <h3>Paisajismo Sustentable</h3>
+                <p>Transformamos espacios abiertos en oasis verdes que no solo mejoran el ecosistema sino que también embellecen el entorno.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <h2>Ponerse en Contacto</h2>
+    <p>Estamos aquí para ayudarte a comenzar con tu próximo proyecto sostenible. Contáctanos y descubre cómo podemos colaborar.</p>
+    
+    <div class="contact-container">
+        <!-- Sección de información de contacto con imagen de fondo -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+            <p><i class="fas fa-envelope"></i> contacto@ecobuild.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Calle Verde 123, Ciudad Sostenible</p>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <form class="contact-form">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefono</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">ENVIAR MENSAJE</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+            <h2>EcoBuild</h2>
+            <p>EcoBuild promueve la arquitectura sostenible para un futuro mejor y más limpio.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Acerca de Nosotros</a></li>
+                <li><a href="#">Mision y Vision</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="footer-contact">
+            <h3>Información de Contacto</h3>
+            <ul>
+                <li><i class="fas fa-phone"></i> +34 123 456 789</li>
+                <li><i class="fas fa-envelope"></i> contacto@ecobuild.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Calle Verde 123, Ciudad Sostenible</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 EcoBuild. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
     <script src="script.js"></script>
 </body>
 </html>
