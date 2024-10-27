@@ -106,7 +106,7 @@ body {
 /* Hero Section */
 .hero {
     height: 600px;
-    background: url('/imagenes/fondo\ index.jpg');
+    background: url('imagenes/fondo index.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -398,7 +398,7 @@ h5.text-success {
 /* Services Section */
 .services {
     padding: 80px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/imagenes/fondo\ index\ 2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./imagenes/fondo index 2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -536,7 +536,7 @@ h5.text-success {
 
 /* Estilos para la caja de información de contacto */
 .contact-info {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/imagenes/contacto2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./imagenes/contacto2.jpg');
     background-color: #333;
     color: white;
     padding: 30px;
