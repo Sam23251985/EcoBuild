@@ -27,12 +27,12 @@
 
     <nav class="navbar">
         <div class="container">
-            <div class="logo">EcoBuild</div>
+            <a href="index.html" class="logo">EcoBuild</a>
             <div class="nav-links">
-                <a href="#">ACERCA DE NOSOTROS</a>
-                <a href="#">MISION Y VISION</a>
+                <a href="about.html">ACERCA DE NOSOTROS</a>
+                <a href="#">RECURSOS</a>
                 <a href="#">GALERIA</a>
-                <a href="#">CONTÁCTANOS</a>
+                <a href="#contacto">CONTÁCTANOS</a>
             </div>
             <div class="phone-info">
                 <i class="fas fa-phone"></i>
@@ -53,7 +53,13 @@
                 <span class="welcome-text">BIENVENIDO A ECOBUILD</span>
                 <h1>Planos Sostenibles</h1>
                 <p>Descubre la innovación en arquitectura ecológica con nuestros diseños sostenibles.</p>
-                <button class="cta-button">CONTÁCTANOS HOY</button>
+                <button class="cta-button" id="contactoButton">CONTÁCTANOS HOY</button>
+                <script>
+                    document.getElementById("contactoButton").addEventListener("click", function() {
+                        window.location.href = "index.html#contacto"; // Redirige a la sección en index.html
+                    });
+                </script>
+                
             </div>
         </div>
     </header>
@@ -90,8 +96,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <button class="contact-btn">CONTÁCTANOS</button>
             </div>
         </div>
     </div>
@@ -151,7 +155,7 @@
     <h2>Ponerse en Contacto</h2>
     <p>Estamos aquí para ayudarte a comenzar con tu próximo proyecto sostenible. Contáctanos y descubre cómo podemos colaborar.</p>
     
-    <div class="contact-container">
+    <div id="contacto" class="contact-container">
         <!-- Sección de información de contacto con imagen de fondo -->
         <div class="contact-info">
             <h3>Contact Information</h3>
@@ -197,11 +201,11 @@
         <div class="footer-links">
             <h3>Enlaces Rápidos</h3>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Acerca de Nosotros</a></li>
-                <li><a href="#">Mision y Vision</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Acerca de Nosotros</a></li>
+                <li><a href="#">Recursos</a></li>
                 <li><a href="#">Galeria</a></li>
-                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
             </ul>
         </div>
 
