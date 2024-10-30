@@ -777,7 +777,7 @@ h5.text-success {
 /*********************ABOUT*********************************************/
 .acerca {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200') center/cover;
+                url('./imagenes/nosotros.jpg') center/cover;
     height: 300px;
     display: flex;
     align-items: center;
@@ -858,5 +858,119 @@ h5.text-success {
 
     .image-container img {
         height: 300px;
+    }
+}
+
+/**********RECURSOS**********/
+
+.recursos {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('./imagenes/recursos.jpg') center/cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.resources-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.video-section {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.video-section h2 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.resource-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.resource-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.resource-card ul {
+    list-style: none;
+}
+
+.resource-card ul li {
+    margin-bottom: 10px;
+}
+
+.resource-card ul li a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resource-card ul li a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-section {
+        margin-bottom: 40px;
     }
 }
